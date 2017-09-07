@@ -17,9 +17,9 @@
                 throw new NotImplementedException();
             }
         }
-        public override List<DbTable> GetDbTables(string tables = null)
+        public override List<DbTable> GetDbTables()
         {
-
+			string tables = Config.Tables;
             if (!string.IsNullOrEmpty(tables))
             {
                 tables = string.Format(" and obj.name in ('{0}')", tables.Replace(",", "','"));

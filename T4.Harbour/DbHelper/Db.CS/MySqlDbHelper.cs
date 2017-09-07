@@ -23,8 +23,9 @@ namespace T4
                 throw new NotImplementedException();
             }
         }
-        public override List<DbTable> GetDbTables(string tables = null)
+        public override List<DbTable> GetDbTables()
         {
+            string tables = Config.Tables;
             #region SQL
             if (!string.IsNullOrEmpty(tables))
             {

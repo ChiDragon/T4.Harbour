@@ -19,6 +19,8 @@ namespace T4
         public static readonly string ConnectionString = string.Format("server={0};database={1};uid={2};pwd={3}", Server, DbDatabase, Uid, Pwd);
         //命名空间
         public static readonly string Namespace = "Harbour";
+        //需要生成的表名，多张表用,分割
+        public static readonly string Tables = null;//"users,rows,titles"
     }
     public class DbFactory
     {
@@ -35,7 +37,7 @@ namespace T4
     public abstract class BaseDbHelper
     {
         public abstract string PreParameter { get; set; }
-        public abstract List<DbTable> GetDbTables(string tables = null);
+        public abstract List<DbTable> GetDbTables();
         public abstract List<DbColumn> GetDbColumns(string tableName, string schema = null);
         public abstract DataTable GetDataTable(string commandText, params IDataParameter[] parms);
         public abstract string GetParStr(List<DbColumn> dbComList);

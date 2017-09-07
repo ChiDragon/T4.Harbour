@@ -96,6 +96,8 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Entity.cs</LastGenOutput>
     </Content>
+    <Content Include="使用说明.txt" />
+    <Content Include="数据库宽展及其他模板扩展说明.txt" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
