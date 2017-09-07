@@ -34,7 +34,7 @@
     public abstract class BaseDbHelper
     {
         public abstract string PreParameter { get; set; }
-        public abstract List<DbTable> GetDbTables(string tables = null);
+        public abstract List<DbTable> GetDbTables();
         public abstract List<DbColumn> GetDbColumns(string tableName, string schema = null);
         public abstract DataTable GetDataTable(string commandText, params IDataParameter[] parms);
         public abstract string GetParStr(List<DbColumn> dbComList);
