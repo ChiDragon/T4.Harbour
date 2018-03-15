@@ -9,16 +9,17 @@ namespace T4
     public class Config
     {
         //数据库名
-        public static readonly string Server = "127.0.0.1";//"127.0.0.1";
-        public static readonly string DbDatabase = "AppBox";
-        public static readonly string Uid = "root";
-        public static readonly string Pwd = "123";
+        public static readonly string Server = "";//"127.0.0.1";
+        public static readonly string DbDatabase = "";
+        public static readonly string Uid = "";
+        public static readonly string Pwd = "";
         //数据库类型
-        public static readonly string DbType = "MySql";//MsSql、MySQL
+        public static readonly string DbType = "MySql";//MsSql\MySql
+
         //数据库连接	
         public static readonly string ConnectionString = string.Format("server={0};database={1};uid={2};pwd={3}", Server, DbDatabase, Uid, Pwd);
         //命名空间
-        public static readonly string Namespace = "Harbour";
+        public static readonly string Namespace = "Orm";
         //需要生成的表名，多张表用,分割
         public static readonly string Tables = null;//"users,rows,titles"
     }
