@@ -27,7 +27,7 @@ using Chloe.Entity;
 
 namespace <#=Config.Namespace#>.Model
 {	
-    [TableAttribute("<#=tableName#>")]
+    [Table("<#=tableName#>")]
 	public partial class Db_<#=tableName#> : IKeyID
     {
 		<# foreach(DbColumn column in dbHelper.GetDbColumns(tableName))  {#>
